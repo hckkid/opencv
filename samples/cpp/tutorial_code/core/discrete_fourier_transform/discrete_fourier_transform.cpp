@@ -68,7 +68,7 @@ int main(int argc, char ** argv)
     q2.copyTo(q1);
     tmp.copyTo(q2);
 
-    normalize(magI, magI, 0, 1, NORM_MINMAX); // Transform the matrix with float values into a
+    normalize(magI, magI, 0, 255, NORM_MINMAX); // Transform the matrix with float values into a
                                             // viewable image form (float between values 0 and 1).
 
     imshow("Input Image"       , I   );    // Show the result
